@@ -4,132 +4,149 @@ html, body{
   
 }
 @import url(https://fonts.googleapis.com/css?family=Anton);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700);
+  
 
-body
-{
-    background: #000;
-}
-.unbreakable-container
-{
-    position: absolute;
-    bottom: 10px;
-    left: 20px;
-}
 
-.unbreakable
-{
-    font-family: 'Anton', sans-serif;
-    line-height: 1;
+ /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+ /* using meyers reset */
 
-    letter-spacing: -.07em;
-    
-    color: #fff;
+/* Box-Sizing */
+box-sizing {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
 }
 
-.ks
-{
-    font-family: 'Anton', sans-serif;
-    font-size: 30px;
-    line-height: 1;
-    
-   
+/* Web Font */
 
-    margin-top: -11px;
+.cover {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+color: white;
 
-    -webkit-transition: all .3s ease-in-out;
-            transition: all .3s cubic-bezier(.190, 1.000, .220, 1.000) 3s;
-    -webkit-transform: translateX(-1000%);
-        -ms-transform: translateX(-1000%);
-            transform: translateX(-1000%);
-    letter-spacing: -1px;
-    text-transform: uppercase;
+margin: 150px 0 0 100px;
 
-    color: #fc0;
+float: left;
+margin-right: 2em;
+font-size: 14px;
+display: block;
+/* box-shadow: 0em 0em 5em rgba(10,10,10,0.7); */
 }
 
-.animate .ks
-{
-    -webkit-transform: translateX(0);
-        -ms-transform: translateX(0);
-            transform: translateX(0);
+.stack {
+
+text-transform: uppercase;
+font-size: 12em;
+line-height: 0.7em;
+word-wrap: break-word;
+overflow-wrap: break-word;
+
 }
 
-span
-{
-    font-family: 'Anton', Helvetica, sans-serif;
-    font-size: 40px;
 
-    text-transform: uppercase;
+span {
+position: relative;
 
-    opacity: 0;
-    color: #fff;
 
-    filter: alpha(opacity=0);
 }
 
-.able
-{
-    -webkit-transition: all .3s cubic-bezier(.190, 1.000, .220, 1.000) 2.3s;
-            transition: all .3s cubic-bezier(.190, 1.000, .220, 1.000) 2.3s;
-    letter-spacing: -.05em;
+/* C */
+.char1 {
+margin-left: -.2em;
+z-index: 4;
+text-shadow: 0.05em 0.05em 0.2em rgba(10,10,10,0.9);
 }
 
-.break
-{
-    -webkit-transition: all .3s ease-in-out 2s;
-            transition: all .3s ease-in-out 2s;
-    letter-spacing: -.05em;
+/* O */
+.char2 {
+z-index: 3; 
+margin-left: -.175em;
+top: 0.08em;
+text-shadow: -0.02em 0.02em 0.2em rgba(10,10,10,0.9);
+
 }
 
-.un
-{
-    -webkit-transition: all .3s ease-in-out 1.7s;
-            transition: all .3s ease-in-out 1.7s;
-    letter-spacing: -.05em;
+/* M */
+.char3 {
+z-index: 9;
+margin-left: -.125em;
+text-shadow: -0.05em 0.05em 0.2em rgba(10,10,10,0.9);
+
 }
 
-.animate .un
-{
-    font-size: 35px;
-
-    -webkit-transform: scale(1.5,1.5);
-        -ms-transform: scale(1.5,1.5);
-            transform: scale(1.5,1.5);
-
-    opacity: 1;
-
-    filter: alpha(opacity=100);
+/* P */
+.char4 {
+z-index: 5;
+margin-left: -.175em;
+text-shadow: 0.02em -0.02em 0.2em rgba(10,10,10,0.9);
 }
 
-.animate .break
-{
-    font-size: 50px;
-
-    -webkit-transform: scale(1.5,1.5);
-        -ms-transform: scale(1.5,1.5);
-            transform: scale(1.5,1.5);
-
-    opacity: 1;
-
-    filter: alpha(opacity=100);
+/* U */
+.char5 {
+z-index: 2;
+margin-left: -.125em;
+top: 0.08em;
+text-shadow: -0.05em 0.05em 0.2em rgba(10,10,10,0.9);
 }
 
-.animate .able
-{
-    font-size: 65px;
+/* T */
+.char6 {
+z-index: 10;
+margin-left: -.125em;
+top: -0.04em;
+text-shadow: 0em 0em 0.2em rgba(10,10,10,0.9);
 
-    -webkit-transform: scale(1.5,1.5);
-        -ms-transform: scale(1.5,1.5);
-            transform: scale(1.5,1.5);
-
-    opacity: 1;
-
-    filter: alpha(opacity=100);
 }
+
+/* A */
+.char7 {
+z-index: 8;
+margin-left: -.3em;
+top: 0em;
+text-shadow: -0.05em 0.05em 0.2em rgba(10,10,10,0.9);
+
+}
+
+/* T */
+.char8 {
+z-index: 6;
+margin-left: -.135em;
+top: -0.05em;
+text-shadow: 0.02em -0.01em 0.2em rgba(10,10,10,0.9);
+}
+
+/* I */
+.char9 {
+z-index: 7;
+ margin-left: -.125em;
+top: 0em;
+text-shadow: 0.03em -0.03em 0.2em rgba(10,10,10,0.8);
+}
+
+/* O */
+.char10 {
+z-index: 1;
+  margin-left: -.125em;
+top: 0em;
+text-shadow: 0.05em -0.05em 0.2em rgba(10,10,10,0.9);
+}
+
+/* N */
+.char11 {
+z-index: 0;
+top: -.04em;
+margin-left: -.125em;
+text-shadow: -0.05em 0.05em 0.2em rgba(10,10,10,0.9);
+}
+
+
+
+
 .asthra-logo img{
     position: absolute;
     left: 60%;
-    margin-top:-100px;
+    margin-top:-50px;
   height:800px;
   width: auto;
   opacity: .8;
@@ -144,141 +161,7 @@ span
   height:300px;
   width: auto;
 }
-/* using meyers reset */
 
-/* Box-Sizing */
-box-sizing {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  
-  /* Web Font */
-  @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700);
-  
- .body {
-    font-family: 'Open Sans Condensed', sans-serif;
-  
-  }
-  
-  
-  .cover {
-   
-    color: white;
-    width: 40%;
-    margin: 0;
-    padding: 1% 7% 1% 10%;
-    float: left;
-    margin-right: 2em;
-    display: block;
-   /* box-shadow: 0em 0em 5em rgba(10,10,10,0.7); */
-  }
-  
-  .stack {
-  
-    text-transform: uppercase;
-    font-size: 12em;
-    line-height: 0.7em;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    
-  }
-  
-  
-  span {
-  position: relative;
-    
-  
-  }
-  
-  /* C */
-  .char1 {
-    margin-left: -.2em;
-    z-index: 4;
-    text-shadow: 0.05em 0.05em 0.2em rgba(10,10,10,0.9);
-  }
-  
-  /* O */
-  .char2 {
-   z-index: 3; 
-   margin-left: -.175em;
-    top: 0.08em;
-      text-shadow: -0.02em 0.02em 0.2em rgba(10,10,10,0.9);
-  
-  }
-  
-  /* M */
-  .char3 {
-    z-index: 9;
-    margin-left: -.125em;
-    text-shadow: -0.05em 0.05em 0.2em rgba(10,10,10,0.9);
-    
-  }
-  
-  /* P */
-  .char4 {
-    z-index: 5;
-    margin-left: -.175em;
-    text-shadow: 0.02em -0.02em 0.2em rgba(10,10,10,0.9);
-  }
-  
-  /* U */
-  .char5 {
-    z-index: 2;
-    margin-left: -.125em;
-    top: 0.08em;
-    text-shadow: -0.05em 0.05em 0.2em rgba(10,10,10,0.9);
-  }
-  
-  /* T */
-  .char6 {
-    z-index: 10;
-      margin-left: -.125em;
-    top: -0.04em;
-    text-shadow: 0em 0em 0.2em rgba(10,10,10,0.9);
-    
-  }
-  
-  /* A */
-  .char7 {
-    z-index: 8;
-    margin-left: -.3em;
-    top: 0em;
-    text-shadow: -0.05em 0.05em 0.2em rgba(10,10,10,0.9);
-    
-  }
-  
-  /* T */
-  .char8 {
-    z-index: 6;
-    margin-left: -.135em;
-    top: -0.05em;
-    text-shadow: 0.02em -0.01em 0.2em rgba(10,10,10,0.9);
-  }
-  
-  /* I */
-  .char9 {
-    z-index: 7;
-        margin-left: -.125em;
-    top: 0em;
-    text-shadow: 0.03em -0.03em 0.2em rgba(10,10,10,0.8);
-  }
-  
-  /* O */
-  .char10 {
-    z-index: 1;
-         margin-left: -.125em;
-    top: 0em;
-    text-shadow: 0.05em -0.05em 0.2em rgba(10,10,10,0.9);
-  }
-  
-  /* N */
-  .char11 {
-    z-index: 0;
-    top: -.04em;
-     margin-left: -.125em;
-    text-shadow: -0.05em 0.05em 0.2em rgba(10,10,10,0.9);
-  }
 
   .swiper-container {
     width: 100%;
@@ -311,9 +194,4 @@ box-sizing {
   line-height: 160%;
   font-weight: 100;
 }
-.lettering img{
-  top: 150px;
-  left:15%;
-  height:400px;
-  position: absolute;
-}
+
