@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/onepage-scroll.css">
+    <link rel="stylesheet" href="src/style.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet"> 
+    <link rel="stylesheet" href="src/swiper.css">
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+    <style>
+        html {
+          height: 100%;
+        }
+        body {
+          background: #E2E4E7;
+          padding: 0;
+          text-align: center;
+          font-family: 'open sans';
+          position: relative;
+          margin: 0;
+          height: 100%;
+          -webkit-font-smoothing: antialiased;
+        }
+        header {
+          position: relative;
+          z-index: 10;
+        }
+        .main section .page_container {
+          position: relative;
+          top: 25%;
+          margin: 0 auto 0;
+          max-width: 950px;
+          z-index: 3;
+        }
+        .main section  {
+          overflow:hidden;
+        }
+        
+     
+        .main section.page1 {
+          background: #383838;
+          background-image: url(src/img/ASTHRA.jpg);
+          background-position: cover;
+          background-size: 1500px;;
+
+        }
+       
+       
+        
+        .main section.page2 {
+          background: #202020;
+        }
+     
+        
+        .main section.page2 h1 {
+          
+            font-family: 'Open Sans Condensed', sans-serif;
+          
+            color: white;
+            position: absolute;
+            font-size: 100px;
+            left: 10px;
+            opacity: .8;
+        }
+        .main section.page2 h2 {
+          color: rgba(255,255,255,0.85);
+          text-align: center;
+          line-height: 160%;
+          font-weight: 100;
+        }
+       
+        .main section.page3 {
+          background: #c0c0c0;
+        }
+       
+        .main section.page3 h1 {
+          text-align: left;
+          padding: 0;
+        
+        }
+        .main section.page3 h2 {
+          color: rgba(0,0,0,0.85);
+         
+        }
+       
+       
+        
+       
+        
+        
+      
+        
+      
+        </style>
+
+</head>
+<body>
+    <div class="swiper-container swiper-container-v">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide-1">
+              <div class="cover">
+                  <p class="stack body">  </p>  
+              </div>
+              <div class="lettering">
+                <img src="src/img/lettering.png" alt="">
+              </div>
+              
+              <div class="asthra-logo">
+                  <img src="src/img/LOGO-ASTHRA.png" alt="">
+              </div>
+          </div>
+          <div class="swiper-slide slide-2">
+              <h1 align="center"></h1>
+              <div class="about-pic">
+                  <img src="src/img/about.png" alt="">
+              </div>
+          </div>
+          <div class="swiper-slide slide-3">
+              <div class="swiper-container swiper-container-h">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">Horizontal Slide 1</div>
+                   
+                    <div class="swiper-slide slide-4">Horizontal Slide 3</div>
+                    <div class="swiper-slide slide-5">Horizontal Slide 4</div>
+                  </div>
+                  <!-- Add Pagination -->
+                  <div class="swiper-pagination swiper-pagination-h"></div>
+                </div>
+          </div>
+          <div class="swiper-slide">Vertical Slide 4</div>
+          <div class="swiper-slide">Vertical Slide 5</div>
+        </div>
+        <div class="swiper-pagination swiper-pagination-v"></div>
+      </div>
+    </div>
+    <script src="src/onepagescroll.js"></script>
+    <script>
+            onePageScroll(".main", {
+            sectionContainer: "section",
+            loop: false,
+            easing: "ease-in",
+            animationTime: 500,
+            pagination: true,
+            responsiveFallback: true,
+            direction: "vertical"
+          });
+               
+    </script>
+    <script>
+        var hotbod = document.querySelector("body");
+
+function doStuff() {
+    hotbod.className += " animate";
+}
+
+window.onload = function() {
+    doStuff();
+};
+</script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js'></script>
+    <script  src="js/index.js"></script>
+    <script>
+    $(document).ready(function() {
+    $(".stack").lettering()
+  });</script>
+  <!-- Swiper JS -->
+  <script src="src/swiper.js"></script>
+  <script>
+      var swiperH = new Swiper('.swiper-container-h', {
+        spaceBetween: 0,
+        pagination: {
+          el: '.swiper-pagination-h',
+          clickable: true,
+          
+        },
+        keyboard: {
+        enabled: true,
+      },
+      });
+      var swiperV = new Swiper('.swiper-container-v', {
+        direction: 'vertical',
+        spaceBetween: 0,
+        mousewheel: true,
+        keyboard: {
+        enabled: true,
+      },
+        pagination: {
+          el: '.swiper-pagination-v',
+          clickable: true,
+        },
+      });
+    </script>
+
+
+</body>
+</html>
