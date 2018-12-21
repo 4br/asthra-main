@@ -153,12 +153,14 @@ text-shadow: -0.05em 0.05em 0.2em rgba(10,10,10,0.9);
 }
 
 .about-pic{
-  height:50px;
+  height:300px;
   width: auto;
 
 }
 .about-pic img{
-  height:300px;
+  float: left;
+  margin-top: 100px;  
+  height:600px;
   width: auto;
 }
 
@@ -193,5 +195,80 @@ text-shadow: -0.05em 0.05em 0.2em rgba(10,10,10,0.9);
   text-align: center;
   line-height: 160%;
   font-weight: 100;
+}
+
+
+
+.sl {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  right: 5%;
+  text-align: center;
+  transform: translateY(-50%);
+  line-height: 60px;
+  color: #dddedf;
+}
+
+.textspan {
+  margin: 10px;
+  opacity: 0;
+  filter: blur(20px);
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.sl.active span {
+  opacity: 1;
+  filter: blur(0px);
+  transition: 1s;
+}
+
+.active {
+  z-index: 10;
+}
+.line{
+ 
+  
+  border-left: 2px #dddedf;
+  border-style: solid;
+  height: 300px;
+  width: 100px;
+  position: absolute;
+  left: 55%;
+  margin-left: -3px;
+  top: 35%;
+  
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px){
+  .cover{
+    font-size: 10px;
+    margin: 0;
+    position: absolute;
+    margin-top: 100px;
+    left: 10%;
+    right: 10%;
+    text-align: center;
+    
+    
+    
+  }
+  .asthra-logo img{
+    top: 52%;
+    transform: translate(-60%,-50%);
+    height: 400px;
+    opacity: .4;
+    filter: blur(2px);
+    -webkit-filter: blur(1px);
+  }
 }
 
