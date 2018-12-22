@@ -163,7 +163,19 @@ text-shadow: -0.05em 0.05em 0.2em rgba(10,10,10,0.9);
   height:600px;
   width: auto;
 }
+@media only screen and (max-width:600px){
+  .about-pic{
+    height:150px;
+    width:auto;
+    float:none;
 
+  }
+  .about-pic img{
+    float:none;
+    height:300px;
+    width:auto;
+  }
+}
 
   .swiper-container {
     width: 100%;
@@ -210,6 +222,14 @@ text-shadow: -0.05em 0.05em 0.2em rgba(10,10,10,0.9);
   line-height: 60px;
   color: #dddedf;
 }
+@media only screen and (max-width:600px){
+  .sl{
+    top:70%;
+    bottom:10%;
+    left:0%;
+    right:0%;
+  }
+}
 
 .textspan {
   margin: 10px;
@@ -241,6 +261,11 @@ text-shadow: -0.05em 0.05em 0.2em rgba(10,10,10,0.9);
   top: 35%;
   
 }
+@media only screen and (max-width:600px){
+  .line{
+    display:none;
+  }
+} 
 
 
 
