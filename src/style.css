@@ -1,7 +1,7 @@
 html, body{
   width:100%;
   height: 100vh;
-  
+
 }
 @import url(https://fonts.googleapis.com/css?family=Anton);
 
@@ -22,7 +22,7 @@ body
     line-height: 1;
 
     letter-spacing: -.07em;
-    
+
     color: #fff;
 }
 
@@ -31,8 +31,8 @@ body
     font-family: 'Anton', sans-serif;
     font-size: 30px;
     line-height: 1;
-    
-   
+
+
 
     margin-top: -11px;
 
@@ -152,18 +152,18 @@ box-sizing {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-  
+
   /* Web Font */
   @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700);
-  
+
  .body {
     font-family: 'Open Sans Condensed', sans-serif;
-  
+
   }
-  
-  
+
+
   .cover {
-   
+
     color: white;
     width: 40%;
     margin: 0;
@@ -173,55 +173,55 @@ box-sizing {
     display: block;
    /* box-shadow: 0em 0em 5em rgba(10,10,10,0.7); */
   }
-  
+
   .stack {
-  
+
     text-transform: uppercase;
     font-size: 12em;
     line-height: 0.7em;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    
+
   }
-  
-  
+
+
   span {
   position: relative;
-    
-  
+
+
   }
-  
+
   /* C */
   .char1 {
     margin-left: -.2em;
     z-index: 4;
     text-shadow: 0.05em 0.05em 0.2em rgba(10,10,10,0.9);
   }
-  
+
   /* O */
   .char2 {
-   z-index: 3; 
+   z-index: 3;
    margin-left: -.175em;
     top: 0.08em;
       text-shadow: -0.02em 0.02em 0.2em rgba(10,10,10,0.9);
-  
+
   }
-  
+
   /* M */
   .char3 {
     z-index: 9;
     margin-left: -.125em;
     text-shadow: -0.05em 0.05em 0.2em rgba(10,10,10,0.9);
-    
+
   }
-  
+
   /* P */
   .char4 {
     z-index: 5;
     margin-left: -.175em;
     text-shadow: 0.02em -0.02em 0.2em rgba(10,10,10,0.9);
   }
-  
+
   /* U */
   .char5 {
     z-index: 2;
@@ -229,25 +229,25 @@ box-sizing {
     top: 0.08em;
     text-shadow: -0.05em 0.05em 0.2em rgba(10,10,10,0.9);
   }
-  
+
   /* T */
   .char6 {
     z-index: 10;
       margin-left: -.125em;
     top: -0.04em;
     text-shadow: 0em 0em 0.2em rgba(10,10,10,0.9);
-    
+
   }
-  
+
   /* A */
   .char7 {
     z-index: 8;
     margin-left: -.3em;
     top: 0em;
     text-shadow: -0.05em 0.05em 0.2em rgba(10,10,10,0.9);
-    
+
   }
-  
+
   /* T */
   .char8 {
     z-index: 6;
@@ -255,7 +255,7 @@ box-sizing {
     top: -0.05em;
     text-shadow: 0.02em -0.01em 0.2em rgba(10,10,10,0.9);
   }
-  
+
   /* I */
   .char9 {
     z-index: 7;
@@ -263,7 +263,7 @@ box-sizing {
     top: 0em;
     text-shadow: 0.03em -0.03em 0.2em rgba(10,10,10,0.8);
   }
-  
+
   /* O */
   .char10 {
     z-index: 1;
@@ -271,7 +271,7 @@ box-sizing {
     top: 0em;
     text-shadow: 0.05em -0.05em 0.2em rgba(10,10,10,0.9);
   }
-  
+
   /* N */
   .char11 {
     z-index: 0;
@@ -290,15 +290,15 @@ box-sizing {
   }
   .slide-1{
     background: #383838;
-   
+
   }
   .slide-2{
     background: #202020;
   }
   .slide-2 h1 {
-          
+
     font-family: 'Open Sans Condensed', sans-serif;
-  
+
     color: white;
     position: absolute;
     font-size: 100px;
@@ -316,4 +316,123 @@ box-sizing {
   left:15%;
   height:400px;
   position: absolute;
+}
+
+/* services */
+.servicebox{
+  padding: 130px 20px 10px;
+  background: white;
+  text-align: center;
+  border-radius: 25x;
+  overflow: hidden;
+  position: relative;
+}
+
+.servicebox .service-icon{
+  display: inline-block;
+  width: 200px ;
+  height: 200px;
+  line-height: 300px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #000 inset;
+  background: linear-gradient(to top,#8633cb,#884fb7 50%,#6d6e72 50%);
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  top: -90px;
+  left: 50%;
+  transform: scale(1) translateX(-50%);
+  transition: all 0.9s ease 0s;
+}
+
+.servicebox:hover .service-icon{
+  font-size: 65px;
+}
+
+.servicebox .title{
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+}
+.servicebox:hover .title{
+  color: #8939cb;
+}
+
+.servicebox .description{
+  font-size: 15px;
+  color: #808080;
+  line-height: 27px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.servicebox .read-more{
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 14px;
+  font-style: italic;
+  color: white;
+  background: linear-gradient(to top,#8633cb,#884fb7);
+  border-radius: 10px 10px 0 0;
+  transform: translateY(50px);
+  transition: all 0.3s ease 0s;
+}
+
+.servicebox .read-more:hover{
+  color: white;
+  box-shadow: 0 0 5px #000;
+}
+
+.servicebox:hover .read-more{
+  transform: translateY(0);
+}
+
+.servicebox.yellow .service-icon{
+  background: linear-gradient(to top,#f1b02b,#fddb18 50%,#6d6e72 50%);
+
+}
+.servicebox.yellow:hover .title{
+  color: #f1b02b;
+}
+.servicebox.yellow .read-more{
+  background: linear-gradient(to top,#f1b02b,#fddb18 );
+}
+
+.servicebox.green .service-icon{
+  background: linear-gradient(to top,#50c338,#9dea28 50%,#6d6e72 50%);
+
+}
+.servicebox.green:hover .title{
+  color: #50c338;
+}
+.servicebox.green .read-more{
+  background: linear-gradient(to top,#50c338,#9dea28 );
+}
+
+.servicebox.red .service-icon{
+  background: linear-gradient(to top,#ef0000,#ff1111 50%,#6d6e72 50%);
+
+}
+.servicebox.red:hover .title{
+  color:  #ef0000;
+}
+.servicebox.red .read-more{
+  background: linear-gradient(to top,#ef0000,#ff1111 );
+}
+
+.container{
+  width: 100%
+  height: 100vh;
+  padding-top: 25vh;
+}
+
+.col-md-3{
+  padding-bottom: 20px;
+}
+
+.slide-5{
+  background-color: #202020;
 }
