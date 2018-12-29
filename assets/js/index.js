@@ -70,3 +70,7 @@
 	};
 
 })(jQuery);
+
+$(document).ready(function() {
+    $(".stack").lettering()
+});

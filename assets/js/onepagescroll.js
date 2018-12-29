@@ -490,37 +490,48 @@ function onePageScroll(element, options) {
 }
 
 /*------------------------------------------------*/
- /*  Ulitilities Method                            */
- /*------------------------------------------------*/
- 
- /*-----------------------------------------------------------*/
- /*  Function by John Resig to replicate extend functionality */
- /*-----------------------------------------------------------*/
- 
- Object.extend = function(orig){
-   if ( orig == null )
-     return orig;
- 
-   for ( var i = 1; i < arguments.length; i++ ) {
-     var obj = arguments[i];
-     if ( obj != null ) {
-       for ( var prop in obj ) {
-         var getter = obj.__lookupGetter__( prop ),
-             setter = obj.__lookupSetter__( prop );
- 
-         if ( getter || setter ) {
-           if ( getter )
-             orig.__defineGetter__( prop, getter );
-           if ( setter )
-             orig.__defineSetter__( prop, setter );
-         } else {
-           orig[ prop ] = obj[ prop ];
-         }
-       }
-     }
-   }
- 
-   return orig;
- };
-	
+/*  Ulitilities Method                            */
+/*------------------------------------------------*/
+
+/*-----------------------------------------------------------*/
+/*  Function by John Resig to replicate extend functionality */
+/*-----------------------------------------------------------*/
+
+Object.extend = function(orig){
+    if ( orig == null )
+	return orig;
+    
+    for ( var i = 1; i < arguments.length; i++ ) {
+	var obj = arguments[i];
+	if ( obj != null ) {
+	    for ( var prop in obj ) {
+		var getter = obj.__lookupGetter__( prop ),
+		    setter = obj.__lookupSetter__( prop );
+		
+		if ( getter || setter ) {
+		    if ( getter )
+			orig.__defineGetter__( prop, getter );
+		    if ( setter )
+			orig.__defineSetter__( prop, setter );
+		} else {
+		    orig[ prop ] = obj[ prop ];
+		}
+	    }
+	}
+    }
+    
+    return orig;
+};
+
+
+/*------------------------------------------------*//*------------------------------------------------*//*------------------------------------------------*/
+onePageScroll(".main", {
+    sectionContainer: "section",
+    loop: false,
+    easing: "ease-in",
+    animationTime: 500,
+    pagination: true,
+    responsiveFallback: true,
+    direction: "vertical"
+});
 
