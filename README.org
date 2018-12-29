@@ -1,0 +1,4 @@
+* The main site for asthra
+- Asthra '19 is scheduled for 31 Jan and 1 Feb 2019.
+- Feel free to look at the code and add you contributions.
+- Please add details of your changes in your pull requests.
